@@ -37,3 +37,12 @@ uv venv
 ```java
 uv add ipykernel python-dotenv
 ```
+
+Q. 왜 가상환경을 구성해야 하나요?
+
+A. 패키지별 의존성으로 인해 잦은 충돌이 발생해 실습별 격리를 위해 진행합니다. 만약 실습 중 충돌이 발생한다면 아래와 같은 방법으로 해결할 수 있습니다
+```java
+.venv 폴더 삭제
+uv venv
+uv sync (pyproject.toml 내 dependencies를 통해 sync)
+```
