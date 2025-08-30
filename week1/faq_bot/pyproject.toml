@@ -5,10 +5,14 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "gradio>=5.44.1",
+    "gradio-pdf>=0.0.22",
     "ipykernel>=6.30.1",
+    "jupyter>=1.1.1",
     "langchain>=0.3.27",
     "langchain-google-genai>=2.1.10",
     "langchain-openai>=0.3.32",
+    "notebook>=7.4.5",
     "pillow>=11.3.0",
     "python-dotenv>=1.1.1",
 ]
