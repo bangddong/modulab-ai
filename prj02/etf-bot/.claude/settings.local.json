@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m py_compile hf-etf-bot/app.py)",
+      "Bash(python -m py_compile hf-etf-bot/config.py)",
+      "Bash(dir /b)",
+      "Bash(python test_db.py)",
+      "Bash(python -c \"import os; total = sum(os.path.getsize(f) for f in os.listdir(''.'') if os.path.isfile(f)); print(f''Total size: {total:,} bytes ({total/1024:.1f} KB)'')\")",
+      "Bash(awk '{print $9}')",
+      "Bash(python -m venv venv_test)",
+      "Bash(python -c \"import sys; print(''Python version:'', sys.version)\")",
+      "Bash(cat requirements.txt)",
+      "Bash(if [ -f .env ])",
+      "Bash(then echo \".env exists\")",
+      "Bash(else echo \".env does NOT exist - need to create\")",
+      "Bash(fi)",
+      "Bash(python -m py_compile app.py)",
+      "Bash(python -c \"\nimport sys\nprint(''Checking imports without running app...'')\ntry:\n    # Test basic imports\n    import gradio\n    print(''✓ gradio available (already installed)'')\nexcept ImportError as e:\n    print(f''✗ gradio not found: {e}'')\n    \ntry:\n    from dotenv import load_dotenv\n    print(''✓ python-dotenv available'')\nexcept ImportError as e:\n    print(f''✗ python-dotenv not found: {e}'')\n\")",
+      "Bash(awk '{printf \"\"\"\"%-30s %6s\\n\"\"\"\", $9, $5}')"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
