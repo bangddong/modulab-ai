@@ -5,12 +5,16 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "deepl>=1.23.0",
     "ipykernel>=7.0.1",
     "langchain>=1.0.2",
     "langchain-chroma>=1.0.0",
     "langchain-community>=0.4",
+    "langchain-huggingface>=1.0.0",
+    "langchain-ollama>=1.0.0",
     "langchain-openai>=1.0.1",
     "langchain-tavily>=0.2.12",
+    "langdetect>=1.0.9",
     "python-dotenv>=1.1.1",
     "sentence-transformers>=5.1.1",
     "transformers>=4.57.1",
