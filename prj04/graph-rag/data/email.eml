@@ -1,0 +1,33 @@
+From: sender@example.com
+To: recipient@example.com
+Subject: Neo4j Docker 설정 관련 업데이트
+Date: Fri, 23 Feb 2024 10:30:00 +0900
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+
+안녕하세요,
+
+Neo4j Docker 설정과 관련하여 몇 가지 업데이트 사항을 공유드립니다.
+
+1. 메모리 설정 변경
+- 페이지 캐시: 2GB로 증가
+- 초기 힙 크기: 1.5GB로 조정
+- 최대 힙 크기: 2GB로 증가
+
+2. 새로운 플러그인 추가
+- GenAI 플러그인이 추가되었습니다
+- APOC 라이브러리가 최신 버전으로 업데이트되었습니다
+
+3. 보안 업데이트
+- 기본 인증 설정이 강화되었습니다
+- SSL/TLS 설정이 추가되었습니다
+
+자세한 내용은 첨부된 문서를 참조해 주시기 바랍니다.
+
+문의사항이 있으시면 언제든 연락 주시기 바랍니다.
+
+감사합니다.
+
+--
+개발팀 드림
+Tel: 010-1234-5678
